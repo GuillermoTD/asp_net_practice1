@@ -12,7 +12,7 @@ builder.Services.AddSingleton<DbConnection>();
 builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
 {
     var dbConnection = serviceProvider.GetRequiredService<DbConnection>();
-    return dbConnection.client; // Usamos el cliente de MongoDB de la instancia de DbConnection
+    return dbConnection.client; // Usamooos el cliente de MongoDB de la instancia de DbConnection
 });
 
 
