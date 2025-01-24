@@ -6,8 +6,8 @@ namespace ASP.NET_Practice.Config
 {
     class DbConnection
     {
-        public required MongoClient client;
-        public required IMongoDatabase database;
+        public MongoClient client;
+        public IMongoDatabase database;
 
         public DbConnection()
         {
