@@ -1,0 +1,38 @@
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\appsettings.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\ASP.NET Practice.exe
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\ASP.NET Practice.deps.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\ASP.NET Practice.runtimeconfig.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\ASP.NET Practice.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\ASP.NET Practice.pdb
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\DnsClient.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Snappier.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.csproj.AssemblyReference.cache
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.AssemblyInfoInputs.cache
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.AssemblyInfo.cs
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.csproj.CoreCompileInputs.cache
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets\msbuild.ASP.NET Practice.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets\msbuild.build.ASP.NET Practice.props
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ASP.NET Practice.props
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ASP.NET Practice.props
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\scopedcss\bundle\ASP.NET Practice.styles.css
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET .48EB13FA.Up2Date
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\refint\ASP.NET Practice.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.pdb
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.genruntimeconfig.cache
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ref\ASP.NET Practice.dll
