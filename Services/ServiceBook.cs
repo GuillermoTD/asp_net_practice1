@@ -9,7 +9,7 @@ namespace ASP.NET_Practice.Services
     {
        internal DbConnection dbconnection = new DbConnection();
 
-       private IMongoCollection<Book>Collection;
+       private readonly IMongoCollection<Book> Collection;
 
        public ServiceBook(){
             Collection = dbconnection.database.GetCollection<Book>("books");
@@ -29,6 +29,7 @@ namespace ASP.NET_Practice.Services
         public async Task DeleteBook(Book book){
              //Aqui se filtra para buscar y comparar el libro pasado por parametro con los libros almacenados en MongoDB
              var filter = Builders<Book>.Filter.Eq(s=>s.Id, book.Id);
+             Console.WriteLine(filter);
              await Collection.DeleteOneAsync(filter);
         }
 
