@@ -1,4 +1,5 @@
 using ASP.NET_Practice.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace ASP.NET_Practice.Services
@@ -7,8 +8,8 @@ namespace ASP.NET_Practice.Services
         Task InsertBook(Book book);
         Task UpdateBook(Book book);
         Task DeleteBook(Book book);
-        // Task<Libro> GetBooks();
+        Task<List<Book>> GetBooks();
+        Task<Book>GetBookById(string id);
     }
 
-   
 }

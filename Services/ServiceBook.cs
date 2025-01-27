@@ -9,7 +9,7 @@ namespace ASP.NET_Practice.Services
     {
        internal DbConnection dbconnection = new DbConnection();
 
-       private IMongoCollection<Book> Collection;
+       private IMongoCollection<Book>Collection;
 
        public ServiceBook(){
             Collection = dbconnection.database.GetCollection<Book>("books");
@@ -19,12 +19,17 @@ namespace ASP.NET_Practice.Services
             await Collection.InsertOneAsync(book);
         }
 
-        public Task UpdateBook(Book book){
-            throw new NotImplementedException();
+        public async Task UpdateBook(Book book){
+            //Aqui se filtra para buscar y comparar el libro pasado por parametro con los libros almacenados en MongoDB
+            var filter = Builders<Book>.Filter.Eq(s=>s.Id, book.Id);
+            //Aqui se reemplaza los nuevos valores del libro que ya estaba
+            await Collection.ReplaceOneAsync(filter,book);
         }
 
-        public Task DeleteBook(Book book){
-            throw new NotImplementedException();
+        public async Task DeleteBook(Book book){
+             //Aqui se filtra para buscar y comparar el libro pasado por parametro con los libros almacenados en MongoDB
+             var filter = Builders<Book>.Filter.Eq(s=>s.Id, book.Id);
+             await Collection.DeleteOneAsync(filter);
         }
 
         public async Task<List<Book>>GetBooks(){

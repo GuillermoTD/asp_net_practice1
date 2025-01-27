@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASP.NET Practice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb1132b09a50cd79e401ac5c86625bcb94e9de9b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd4cfcab75aa9ff90301642053cd8a5892bc30e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASP.NET Practice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASP.NET Practice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
