@@ -1,3 +1,4 @@
+using ASP.NET_Practice.DTO;
 using ASP.NET_Practice.Models;
 using ASP.NET_Practice.Services;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -24,12 +25,18 @@ namespace ASP.NET_Practice.Controllers
         {
             try
             {
-                Console.WriteLine("Toma tu libroo ");
-                return Ok(await bookservice.GetBooks());
+                var collection = await bookservice.GetBooks();
+
+                /*Aqui se recorren los objetos de tipo Book y se convierten a DTO,
+                esto es posible por el tipo IEnumarable asignada al servicio GetBooks*/
+                var result = collection.AsQueryable().Select(e => e.ConvertBookDTO());
+
+                //Retornamos un mensaje de codigo 200 
+                return Ok(result);
             }
+
             catch (System.Exception error)
             {
-
                 _logger.LogError(error, "Hubo un error al obtener los libros");
                 return BadRequest();
             }
@@ -41,9 +48,15 @@ namespace ASP.NET_Practice.Controllers
             try
             {
                 Console.WriteLine("Toma tu libro");
-                var result = await bookservice.GetBookById(id);
+                var book = await bookservice.GetBookById(id);
+                var result = book.ConvertBookDTO();
 
-                return Ok(result);
+                if (book is null)
+                {
+                    return NotFound("Libro no encontrado");
+                }
+
+                return Ok(book);
             }
             catch (System.Exception error)
             {
@@ -54,7 +67,7 @@ namespace ASP.NET_Practice.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateBook(Book book)
+        public async Task<ActionResult> CreateBook(BookDTO book)
         {
             if (book is null)
             {
@@ -62,6 +75,15 @@ namespace ASP.NET_Practice.Controllers
             }
             //aqui hacemos uso de la funcion insertbook ubicada en el servicebook
             await bookservice.InsertBook(book);
+
+
+            Book NewBook = new Book{
+                Autor = book.Autor,
+                Titulo = book.Titulo,
+                NumPaginas = book.NumPaginas,
+                FechaPublicacion = DateTime.Now,
+            };
+            
             //La funcion created crea una respuesta http de codigo 201
             return Created("Insertado", true);
         }
@@ -82,18 +104,18 @@ namespace ASP.NET_Practice.Controllers
         }
 
 
-        [HttpDelete("id")]        
+        [HttpDelete("id")]
         public async Task<ActionResult> DeleteBook(string id)
         {
             var book = await bookservice.GetBookById(id);
-            
+
             if (book is null)
             {
                 return BadRequest();
             }
 
             book.Id = new ObjectId(id);
-            
+
             await bookservice.DeleteBook(book);
 
             return NoContent();

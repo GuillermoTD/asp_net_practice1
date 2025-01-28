@@ -2,6 +2,7 @@ using ASP.NET_Practice.Models;
 using ASP.NET_Practice.Config;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using ASP.NET_Practice.DTO;
 
 namespace ASP.NET_Practice.Services
 {
@@ -33,12 +34,17 @@ namespace ASP.NET_Practice.Services
              await Collection.DeleteOneAsync(filter);
         }
 
-        public async Task<List<Book>>GetBooks(){
+        public async Task<IEnumerable<Book>>GetBooks(){
             return await Collection.FindAsync(new BsonDocument()).Result.ToListAsync();
         }
 
         public async Task<Book> GetBookById(string id){
             return await Collection.FindAsync(new BsonDocument{{"_id",new ObjectId(id)}}).Result.FirstAsync();
+        }
+
+        public Task InsertBook(BookDTO book)
+        {
+            throw new NotImplementedException();
         }
     }
 }

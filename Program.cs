@@ -1,9 +1,13 @@
 using MongoDB.Driver;
 using ASP.NET_Practice.Config;
-using Swashbuckle.AspNetCore.SwaggerGen;
 using ASP.NET_Practice.Services;
+using NLog;
+using NLog.Extensions.Logging;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 builder.Services.AddControllers();
 
@@ -20,6 +24,11 @@ builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
     Console.WriteLine("Connectado a base de datos");
     return dbConnection.client; // Usamooos el cliente de MongoDB de la instancia de DbConnection
 });
+builder.Logging.AddNLog(); 
+// builder.Host.ConfigureLogging((hostingContext, logging) =>
+// {
+//     logging.AddNLog();
+// });
 
 builder.Services.AddSwaggerGen();
 

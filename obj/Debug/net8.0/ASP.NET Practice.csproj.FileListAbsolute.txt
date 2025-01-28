@@ -37,3 +37,8 @@ C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\De
 C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.genruntimeconfig.cache
 C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ref\ASP.NET Practice.dll
 C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\obj\Debug\net8.0\ASP.NET Practice.sourcelink.json
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Config\nlog.config
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\Logs\nlog.config
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\NLog.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

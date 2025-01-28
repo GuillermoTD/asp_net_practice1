@@ -10,6 +10,6 @@ namespace ASP.NET_Practice.Models
         public required string Autor { get; set; }
         public required string Titulo { get; set; }
         public required string NumPaginas { get; set; }
-        public required DateTime FechaPublicacion { get; set; }
+        public DateTime FechaPublicacion { get; set; }
     }
 }
