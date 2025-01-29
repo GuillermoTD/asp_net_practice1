@@ -11,10 +11,10 @@ namespace ASP.NET_Practice.Controllers
     [Route("api/[controller]")]
     public class BooksController : Controller
     {
-        private readonly IServiceBook bookservice;
+        private readonly IBookService bookservice;
         private readonly ILogger<BooksController> _logger;
 
-        public BooksController(IServiceBook service, ILogger<BooksController> logger)
+        public BooksController(IBookService service, ILogger<BooksController> logger)
         {
             bookservice = service;
             _logger = logger;

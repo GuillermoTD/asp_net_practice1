@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<DbConnection>();
 
 
-builder.Services.AddScoped<IServiceBook, ServiceBook>();
+builder.Services.AddScoped<IBookService, ServiceBook>();
 
 // Registrar MongoClient como un servicio a partir de DbConnection
 builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
@@ -24,13 +24,32 @@ builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
     Console.WriteLine("Connectado a base de datos");
     return dbConnection.client; // Usamooos el cliente de MongoDB de la instancia de DbConnection
 });
-builder.Logging.AddNLog(); 
+builder.Logging.AddNLog();
+
+// var configPath = Path.Combine(Directory.GetCurrentDirectory(), "Config", "nlog.config");
+// LogManager.Setup().LoadConfigurationFromFile(configPath);
+
+// var configPath = @"C:\Users\ESTEVAN\OneDrive - Solvex Dominicana\Documentos\ASP.NET Practice\Config\nlog.config";
+// LogManager.Setup().LoadConfigurationFromFile(configPath);
+
+var configPath = Path.Combine(Directory.GetCurrentDirectory(), "Config", "nlog.config");
+if (File.Exists(configPath))
+{
+    LogManager.Setup().LoadConfigurationFromFile(configPath);
+    Console.WriteLine("Funciona el logeo");
+}
+else
+{
+    Console.WriteLine($"El archivo de configuración no se encuentra en la ruta: {configPath}");
+}
+
 // builder.Host.ConfigureLogging((hostingContext, logging) =>
 // {
 //     logging.AddNLog();
 // });
 
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 

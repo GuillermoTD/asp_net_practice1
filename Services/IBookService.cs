@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace ASP.NET_Practice.Services
 {
-    public interface IServiceBook{
+    public interface IBookService{
         Task InsertBook(Book book);
         Task UpdateBook(Book book);
         Task DeleteBook(Book book);

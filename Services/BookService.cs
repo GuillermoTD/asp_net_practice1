@@ -6,7 +6,7 @@ using ASP.NET_Practice.DTO;
 
 namespace ASP.NET_Practice.Services
 {
-    public class ServiceBook : IServiceBook
+    public class ServiceBook : IBookService
     {
        internal DbConnection dbconnection = new DbConnection();
 
