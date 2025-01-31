@@ -6,13 +6,13 @@ using ASP.NET_Practice.DTO;
 
 namespace ASP.NET_Practice.Services
 {
-    public class ServiceBook : IBookService
+    public class BookService : IBookService
     {
        internal DbConnection dbconnection = new DbConnection();
 
        private readonly IMongoCollection<Book> Collection;
 
-       public ServiceBook(){
+       public BookService(){
             Collection = dbconnection.database.GetCollection<Book>("books");
        }
 

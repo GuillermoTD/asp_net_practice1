@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace ASP.NET_Practice.Services
 {
     public interface IUserService{
-       Task<UserModel>GetUser(LoginApiDTO login);
+       Task<UserModel>GetUser(LoginDTO login);
     }
 
 }

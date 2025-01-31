@@ -15,7 +15,8 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<DbConnection>();
 
 
-builder.Services.AddScoped<IBookService, ServiceBook>();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Registrar MongoClient como un servicio a partir de DbConnection
 builder.Services.AddSingleton<IMongoClient>(serviceProvider =>

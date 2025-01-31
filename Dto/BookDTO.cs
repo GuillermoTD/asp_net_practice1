@@ -6,7 +6,6 @@ namespace ASP.NET_Practice.DTO
 {
     public class BookDTO{
 
-    
     [BsonElement("idHex")]
     public required string IdHex { get; set; }
 

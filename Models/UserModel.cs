@@ -16,7 +16,11 @@ namespace ASP.NET_Practice.Models
         public string Email {get;set;}
 
         public string Token {get;set;}
+        
+       [BsonRepresentation(BsonType.DateTime)]
         public DateTime Registration_Date {get;set;}
+
+         [BsonRepresentation(BsonType.DateTime)]
         public DateTime? Cancelation_Date {get;set;}
 
     }
